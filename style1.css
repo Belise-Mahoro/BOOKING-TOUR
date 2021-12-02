@@ -1,0 +1,197 @@
+*{
+
+    margin: 0px;  
+
+    padding: 0px;
+
+}
+
+/* navbar style */
+
+.topnav{
+
+    background-color:rgb(78, 9, 9);  /*background color for our top nav*/
+
+    width:100%;
+
+    height:80px;
+
+    top:0;
+
+    left:0;
+
+    Position:fixed;  /* to make our navbar fixed at the top */
+
+    margin: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    z-index:999;        /* to make element move into a fixed nav*/
+ 
+
+}
+
+ 
+.topnav a {
+
+    float: left;
+
+    color: #f2f2f2;
+
+    text-align: center;
+
+    padding: 24px 16px 10px 20px;
+
+    text-decoration: none;        /*to remove bullet, lines or other decoration */
+
+    font-size: 20px;
+
+  }
+
+  /* to make a hover on our menu */
+
+  .topnav a:hover {
+
+    background-color: #ddd;
+
+    color: black;
+
+  }
+
+  /* to move our top nav to the left */
+
+.topnav-right{
+
+     float:right;
+
+}
+
+#logo{
+
+    padding-left:60px;
+float: left;
+}
+.topnav img{
+height: 60px;
+width: 120px
+}
+
+
+.topnav .active{
+
+    border-bottom: 3px solid white;       /* to make a border on active menu */
+
+}
+
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+  }
+  
+  .container {
+      background: rgb(15, 15, 15);
+      width: 400px;
+      height: 500px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      color: white;
+      padding: 50px;
+  }
+  
+  .heading {
+      font-size: 55px;
+      margin-bottom: 15px;
+  }
+  
+  .box {
+      margin: 9px 3px 9px;
+  }
+  
+  .container .box p {
+      margin-top: 9px;
+      margin-bottom: 9px;
+      color: White;
+  }
+  
+  .container .box div {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      
+  }
+  
+  .container .box input {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: black;
+      color:white;
+      border: none;
+      outline: none;
+      padding-left: 10px;
+      border-radius: 10px;
+      transition: all .4s;
+  }
+  .container .box input:focus::placeholder {
+      color: white;
+  }
+  
+  .container .box div::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 101%;
+      height: 107%;
+      border-radius: 10px;
+      background: linear-gradient(to right, #f5ff41, #2bfbff);
+  }
+  
+  .loginBtn {
+      width: 50%;
+      height: 40px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 25px;
+      margin-left: 10px;
+      transform: translate(-1%);
+      cursor: pointer;
+      color: white;
+      background: linear-gradient(to right, #f5ff41, #2bfbff);
+      transition: all .4s;
+      color: black;
+      font-size: 15px;
+  }
+  
+  .loginBtn:hover {
+      transform: translate(-1%, 5%);
+      box-shadow: 0 0 10px #41b2ff;
+  }
+  
+  .text {
+      font-size: 11px;
+      margin-top: 10px;
+      margin-left: 15px;
+      color: rgba(225, 255, 255, 0.911);
+  }
+  
+  
